@@ -1,12 +1,14 @@
-let dataContainer = document.getElementById("konten")
+let dataContainer = document.getElementById("konten");
 
 let getData = async () => {
-    let response = await fetch("https://634cc795acb391d34a8bd674.mockapi.io/psikolog")
-    let respon = await response.json()
+  let response = await fetch(
+    "https://634cc795acb391d34a8bd674.mockapi.io/psikolog"
+  );
+  let respon = await response.json();
 
-    respon.forEach((item) => {
-        console.log(item)
-        dataContainer.innerHTML += `        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3">
+  respon.forEach((item) => {
+    console.log(item);
+    dataContainer.innerHTML += `        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3">
         <div class="card">
         <div class="card-body">
           <div class="row">
@@ -29,8 +31,8 @@ let getData = async () => {
           </div>
         </div>
       </div>
-      </div>`
-    });
-}
+      </div>`;
+  });
+};
 
-getData()
+getData();
