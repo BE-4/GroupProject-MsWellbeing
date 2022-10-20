@@ -11,6 +11,10 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/f2c57da79f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -36,16 +40,64 @@
               <a class="nav-link" href="list.html">List Psikolog</a>
             </li>
             <li class="nav-item d-flex justify-content-between">
-              <button class="btn btn-sm btn-outline-success me-3">
+              <button
+                class="btn btn-sm btn-outline-success me-3"
+                onclick="location.href='signup.html'"
+              >
                 Sign Up
               </button>
-              <button class="btn btn-sm btn-success">Sign In</button>
+              <button
+                class="btn btn-sm btn-success"
+                onclick="location.href='signin.html'"
+              >
+                Sign In
+              </button>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <footer></footer>
+    <section class="container">
+      <button
+        class="mb-5"
+        onclick="history.back()"
+        style="background: transparent; border: none"
+      >
+        <i class="fa-solid fa-chevron-left"></i>Kembali
+      </button>
+      <div class="row d-flex justify-content-center text-center">
+        <div class="col-12 my-1">
+          <img src="https://via.placeholder.com/250" alt="" />
+        </div>
+        <div class="col-12 my-1">
+          <span class="h5">Dr. Rafi</span>
+        </div>
+        <div class="col-12 my-1">
+          <span class="h6"><i class="fa-solid fa-clock"></i> 6 tahun</span>
+        </div>
+        <div class="col-12 my-1">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id
+            pulvinar velit. In ac massa arcu. Aenean congue, erat non rutrum
+            cursus, tortor lorem malesuada risus, in pretium lorem ligula eu
+            nulla. Integer sed vehicula nibh, eu malesuada magna. Sed eget
+            aliquet justo. Donec vel felis sodales arcu vehicula mattis sed
+            finibus quam. Mauris quis convallis nibh. Duis in mi vehicula odio
+            fringilla fringilla. Pellentesque blandit in nisl non lobortis.
+            Vivamus at rutrum massa, nec sollicitudin urna. Nulla sem tortor,
+            faucibus vitae lectus et, hendrerit lobortis leo. Vestibulum finibus
+            magna eros, id tristique magna vestibulum ut. Suspendisse semper,
+            ligula nec consectetur pulvinar, ex lacus ultricies purus, quis
+            tincidunt mauris ipsum et odio s.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="fixed-bottom bg-success text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3 text-light">© 2022 Copyright: Menthy</div>
+      <!-- Copyright -->
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
