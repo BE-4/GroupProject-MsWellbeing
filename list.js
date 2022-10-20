@@ -24,7 +24,7 @@ let getData = async () => {
                   <span class="">${item.pengalaman} Tahun</span>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-success">Detail</button>
+                  <button class="btn btn-success" onclick="location.href='detail.html?id=${item.id}'">Detail</button>
                 </div>
               </div>
             </div>
