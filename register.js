@@ -1,19 +1,34 @@
-let nameInput = document.querySelector("#nama");
-let emailInput = document.querySelector("#email");
-let passwordInput = document.querySelector("#password");
-let noTelpInput = document.querySelector("#no_telepon");
-let submit = document.querySelector("#submit");
-let nama, email, password, no_telp;
+window.onload = function () {
+    let submitClicked = document.querySelector("#submit");
+    submitClicked.addEventListener("click", function () {
+      let nama = document.querySelector("#nama").value;
+      let email = document.querySelector("#email").value;
+      let password = document.querySelector("#password").value;
+      let nomorTelepon = document.querySelector("#no_telepon").value;
 
-
-
-submit.addEventListener("click", () => {
-
-    nama = nameInput.value;
-    email = emailInput.value;
-    password = passwordInput.value;
-    no_telp = noTelpInput.value;
-   
-})
+  
+      fetch("https://634fe40678563c1d82b2b716.mockapi.io/be4/user", {
+  
+        method: "POST",
+  
+        headers: {
+          "Content-Type": "application/json",
+        },
+  
+        body: JSON.stringify({
+          nama: nama,
+          email: email,
+          password: password,
+          nomorTelepon: nomorTelepon,
+          
+        }),
+  
+      })
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+        .then(() => location.reload());
+    });
+  };
+  
 
 
