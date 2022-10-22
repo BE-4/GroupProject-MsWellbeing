@@ -27,6 +27,9 @@ window.onload = function () {
         .then((response) => response.json())
         .then((data) => console.log(data))
         .then(() => location.reload());
+
+        alert("Anda berhasil daftar, Silahkan Login!")
+      
     });
   };
   
