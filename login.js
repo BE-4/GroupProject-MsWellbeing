@@ -15,6 +15,7 @@
             if (emailInput == user[i].email && passwordInput == user[i].password ){
                 console.log(emailInput +" "+ "berhasil login")
                 alert("anda berhasil login")
+                // window.location.href = "index.html"
                 return
         }
     }
