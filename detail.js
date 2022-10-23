@@ -22,18 +22,7 @@ let getDetailData = async () => {
   </div>
     <div class="col-12 my-1">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-        id pulvinar velit. In ac massa arcu. Aenean congue, erat non
-        rutrum cursus, tortor lorem malesuada risus, in pretium lorem
-        ligula eu nulla. Integer sed vehicula nibh, eu malesuada magna.
-        Sed eget aliquet justo. Donec vel felis sodales arcu vehicula
-        mattis sed finibus quam. Mauris quis convallis nibh. Duis in mi
-        vehicula odio fringilla fringilla. Pellentesque blandit in nisl
-        non lobortis. Vivamus at rutrum massa, nec sollicitudin urna.
-        Nulla sem tortor, faucibus vitae lectus et, hendrerit lobortis
-        leo. Vestibulum finibus magna eros, id tristique magna vestibulum
-        ut. Suspendisse semper, ligula nec consectetur pulviginar, ex
-        lacus ultricies purus, quis tincidunt mauris ipsum et odio s.
+       ${detail[0].deskripsi}
       </p>
     </div>
   </div>
