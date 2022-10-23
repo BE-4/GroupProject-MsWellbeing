@@ -7,15 +7,17 @@
 
     let user = [];
 
-    submitClicked.addEventListener("click", function(){
+    submitClicked.addEventListener("click", function(event){
+        event.preventDefault()
         let emailInput = document.querySelector("#email").value;
         let passwordInput = document.querySelector("#password").value;
 
         for (i=0; i < user.length; i++) {
             if (emailInput == user[i].email && passwordInput == user[i].password ){
                 console.log(emailInput +" "+ "berhasil login")
-                alert("anda berhasil login")
+                // alert("anda berhasil login")
                 window.location.href = "berandaUser.html";
+                console.log("tes")
                 return
         }
     }
