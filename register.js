@@ -15,7 +15,7 @@ window.onload = function () {
       let nomorTelepon = document.querySelector("#no_telepon").value;
       
 
-      for (i=0; i < user.length; i++) {
+      for (i = 0; i < user.length; i++) {
         if (nama == user[i].nama && email == user[i].email && password == user[i].password && nomorTelepon == user[i].nomorTelepon){
             console.log(nama +" "+ "Sudah Terdaftar")
             alert("anda sudah terdaftar")
@@ -46,9 +46,6 @@ window.onload = function () {
 
         alert("Anda berhasil daftar, Silahkan Login!")
 
-      
-        
-    
     });
 
   };
