@@ -40,8 +40,8 @@
             <li class="nav-item me-2">
               <a class="nav-link" href="list.html">List Psikolog</a>
             </li>
-            <li class="nav-item d-flex justify-content-between">
-              <button
+            <li class="nav-item d-flex justify-content-between" id="navlog">
+              <!-- <button
                 class="btn btn-sm btn-outline-success me-3"
                 onclick="location.href='signup.html'"
               >
@@ -52,7 +52,7 @@
                 onclick="location.href='signin.html'"
               >
                 Sign In
-              </button>
+              </button> -->
             </li>
           </ul>
         </div>
@@ -106,46 +106,8 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script src="checklogin.js"></script>
     <script src="detail.js"></script>
-    <script>
-      // let params = new URL(document.location).searchParams;
-      // let id = params.get("id");
-      // let getDetailData = async () => {
-      //   let url = `https://634cc795acb391d34a8bd674.mockapi.io/psikolog?id=${id}`;
-      //   let response = await fetch(url);
-      //   let detail = await response.json();
-      //   let konten = document.getElementById("konten");
-      //   konten.innerHTML = `
-      // <div class="container">
-      //     <div class="col-12 my-1">
-      //       <img src="https://via.placeholder.com/250" alt="" />
-      //     </div>
-      //     <div class="col-12 my-1">
-      //       <span class="h5">${detail[0].nama}</span>
-      //     </div>
-      //     <div class="col-12 my-1">
-      //       <span class="h6"><i class="fa-solid fa-clock"></i> ${detail[0].pengalaman} tahun</span>
-      //     </div>
-      //     <div class="col-12 my-1">
-      //       <p>
-      //         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-      //         id pulvinar velit. In ac massa arcu. Aenean congue, erat non
-      //         rutrum cursus, tortor lorem malesuada risus, in pretium lorem
-      //         ligula eu nulla. Integer sed vehicula nibh, eu malesuada magna.
-      //         Sed eget aliquet justo. Donec vel felis sodales arcu vehicula
-      //         mattis sed finibus quam. Mauris quis convallis nibh. Duis in mi
-      //         vehicula odio fringilla fringilla. Pellentesque blandit in nisl
-      //         non lobortis. Vivamus at rutrum massa, nec sollicitudin urna.
-      //         Nulla sem tortor, faucibus vitae lectus et, hendrerit lobortis
-      //         leo. Vestibulum finibus magna eros, id tristique magna vestibulum
-      //         ut. Suspendisse semper, ligula nec consectetur pulviginar, ex
-      //         lacus ultricies purus, quis tincidunt mauris ipsum et odio s.
-      //       </p>
-      //     </div>
-      //   </div>
-      // `;
-      // };
-      // getDetailData();
-    </script>
+
   </body>
 </html>
