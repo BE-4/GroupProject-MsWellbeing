@@ -1,0 +1,43 @@
+#menthy {
+    color: #38d2a6;
+}
+
+.atas {
+    text-align: center;
+    margin-top: 5rem;
+    display: flex;
+    margin-left: 10rem;
+}
+
+.konten h1{
+    font-size: 45px;
+}
+
+.konten h6 {
+    font-size: 40px;
+}
+
+.foto img {
+    width: 30rem;
+    height: 15rem;
+    margin-left: 5rem;
+}
+
+.konten button {
+    margin-top: 1rem;
+}
+
+.layanan h1 {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.kartu {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin-right: 3rem;
+    margin-top: 2rem;
+}
