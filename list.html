@@ -12,6 +12,7 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="list.css" />
     <script
       src="https://kit.fontawesome.com/f2c57da79f.js"
       crossorigin="anonymous"
@@ -27,32 +28,22 @@
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="navbar-nav ms-auto navbar-nav-scroll">
             <li class="nav-item me-2">
-              <a class="nav-link" aria-current="page" href="#">Kuesioner</a>
+              <a class="nav-link" aria-current="page" href="kuesioner.html"
+                >Kuesioner</a
+              >
             </li>
             <li class="nav-item me-2">
               <a class="nav-link" href="list.html">List Psikolog</a>
             </li>
-            <li class="nav-item d-flex justify-content-between">
-              <button
-                class="btn btn-sm btn-outline-success me-3"
-                onclick="location.href='signup.html'"
-              >
-                Sign Up
-              </button>
-              <button
-                class="btn btn-sm btn-success"
-                onclick="location.href='signin.html'"
-              >
-                Sign In
-              </button>
-
-
-            </li>
+            <li
+              class="nav-item d-flex justify-content-between"
+              id="navlog"
+            ></li>
           </ul>
         </div>
       </div>
     </nav>
-    <section class="container">
+    <section class="container mb-5">
       <div class="row" id="konten">
         <!-- card -->
         <!-- <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3">
@@ -93,5 +84,8 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script src="checklogin.js"></script>
+
+    <script src="list.js"></script>
   </body>
 </html>
